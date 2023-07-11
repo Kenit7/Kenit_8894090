@@ -7,7 +7,7 @@ driver.get("https://www.imdb.com")
 
 # Perform some actions on the IMDb page
 # Action 1: Search for a movie and click on its title
-search_input = driver.find_element("xpath","//input[@id='suggestion-search']")
+search_input = driver.find_element("xpath","/html/body/div[2]/nav/div[2]/div[1]/form/div[2]/div/input")
 search_input.send_keys("The Shawshank Redemption")
 search_input.submit()
 
